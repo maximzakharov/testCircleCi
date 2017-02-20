@@ -1,6 +1,8 @@
 dependencies:
   pre:
     - cd ../; git clone https://github.com/cpputest/cpputest.git; cd cpputest; ./autogen.sh; ./configure; make; sudo make install; cd ../testCircleCi;
+  override:
+    
 test:
   override:
 - make && make test
