@@ -1,11 +1,11 @@
 dependencies:
   pre:
-    - cd ../; git clone https://github.com/cpputest/cpputest.git; cd cpputest; ./autogen.sh; ./configure; make; sudo make install; cd ../testCircleCi;
+    - cd ../; git clone https://github.com/cpputest/cpputest.git; cd cpputest; ./autogen.sh; ./configure; make; sudo make install;
   override:
-    
+    - cd ../testCircleCi;
 test:
   override:
-- make && make test
+    - make && make test
 checkout:
   post:
     # - git submodule init
