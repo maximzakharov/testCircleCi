@@ -1,12 +1,11 @@
 dependencies:
   pre:
-    - make; cd ../; git clone https://github.com/cpputest/cpputest.git
+    - make; cd ../; git clone https://github.com/cpputest/cpputest.git; cd cpputest; ./autogen.sh; ./configure; make; sudo make install; cd ../testCircleCi; ls
   override:
-    - cd make; make; make test
+    - ls
 test:
   override:
-    - cd bin; ./gtest_myint
+    - pwd
 checkout:
   post:
-    - git submodule init
-    - git submodule update
+    

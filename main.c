@@ -36,6 +36,10 @@ TEST(FirstTestGroup, OtherTest)
    CHECK_TEXT(true, "My mistake");
 }
 
+TEST(FirstTestGroup, Other2Test)
+{
+   CHECK_TEXT(false, "My mistake");
+}
 
 int main(int argc, const char * argv[]) {
 	return CommandLineTestRunner::RunAllTests(argc, argv);
