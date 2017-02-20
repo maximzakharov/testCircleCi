@@ -33,7 +33,7 @@ testCircleCi: ${CORE_OBJ} ${COMMON_OBJ} main.c
 	${CC} ${CORE_OBJ} ${COMMON_OBJ} main.c ${CFLAGS} ${LDFLAGS} -o $@
 
 test:
-	./testCircleCi
+	./testCircleCi -c
 
 show:
 	echo $(CPPUTEST_HOME)
