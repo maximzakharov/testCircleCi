@@ -1,8 +1,8 @@
 dependencies:
   pre:
-    - make; cd ../; git clone https://github.com/cpputest/cpputest.git; cd cpputest; ./autogen.sh; ./configure; make; sudo make install; cd ../testCircleCi; ls
+    - make; cd ../; git clone https://github.com/cpputest/cpputest.git; cd cpputest; ./autogen.sh; ./configure; make; sudo make install; cd ../testCircleCi;
   override:
-    - ls
+    - make && make test
 test:
   override:
     - pwd
