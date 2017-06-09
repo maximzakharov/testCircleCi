@@ -1,13 +1,4 @@
-disabled_rules:
-  -file_length
 
-
-file_length:
-warning: 7
-error: 10
-
-line_length:
-warning: 150
 
 dependencies:
   pre:
@@ -19,6 +10,17 @@ test:
     - make && make test
 checkout:
   post:
+    [ {
+  "path" : "raw-test-output/go-test-report.xml",
+  "pretty_path" : "raw-test-output/go-test-report.xml",
+  "node_index" : 0,
+  "url" : "https://24-88881093-gh.circle-artifacts.com/0/raw-test-output/go-test-report.xml"
+}, {
+  "path" : "raw-test-output/go-test.out",
+  "pretty_path" : "raw-test-output/go-test.out",
+  "node_index" : 0,
+  "url" : "https://24-88881093-gh.circle-artifacts.com/0/raw-test-output/go-test.out"
+} ]
     # - git submodule init
     # - git submodule update
 
