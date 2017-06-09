@@ -1,3 +1,14 @@
+disabled_rules:
+  -file_length
+
+
+file_length:
+warning: 7
+error: 10
+
+line_length:
+warning: 150
+
 dependencies:
   pre:
     - cd ../; git clone https://github.com/cpputest/cpputest.git; cd cpputest; ./autogen.sh; ./configure; make; sudo make install;
@@ -11,13 +22,3 @@ checkout:
     # - git submodule init
     # - git submodule update
 
-disabled_rules:
-  -file_length
-
-
-file_length:
-warning: 7
-error: 1500
-
-line_length:
-warning: 150
