@@ -28,7 +28,7 @@ TEST(FirstTestGroup, FirstTest)
 
 TEST(FirstTestGroup, SecondTest)
 {
-   CHECK(1==1);
+   CHECK(1==0);
 }
 
 TEST(FirstTestGroup, OtherTest)
