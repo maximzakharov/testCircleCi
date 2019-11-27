@@ -7,5 +7,4 @@ jobs:
       IMAGETAG: latest
     working_directory: ~/.
     steps:
-      - run: echo "This is pipeline ID << pipeline.id >>"
-      cd ../; git clone https://github.com/cpputest/cpputest.git; cd cpputest; ./autogen.sh; ./configure; make; sudo make install;
+      - run: cd ../; git clone https://github.com/cpputest/cpputest.git; cd cpputest; ./autogen.sh; ./configure; make; sudo make install;
