@@ -33,7 +33,7 @@ TEST(FirstTestGroup, SecondTest)
 
 TEST(FirstTestGroup, OtherTest)
 {
-   CHECK_TEXT(true, "My mistake");
+   CHECK_TEXT(false, "My mistake");
 }
 
 int main(int argc, const char * argv[]) {
