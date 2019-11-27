@@ -8,3 +8,4 @@ jobs:
     working_directory: ~/.
     steps:
       - run: git clone https://github.com/cpputest/cpputest.git; cd cpputest; ./autogen.sh; ./configure; make; sudo make install;
+    test: ./testCircleCi -c
