@@ -7,7 +7,7 @@ jobs:
       IMAGETAG: latest
     working_directory: ~/.
     steps:
-      - run: ls; 
+      - run: ls -l; pwd;
       
       # git clone https://github.com/cpputest/cpputest.git; cd cpputest; ./autogen.sh; ./configure; make; sudo make install; cd ../testCircleCi; make && make test
       
